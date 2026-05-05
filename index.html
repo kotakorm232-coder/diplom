@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Северный Комфорт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="logo" href="#top" aria-label="Северный Комфорт - на главную">
+          <img src="assets/logo.png" alt="Логотип Северный Комфорт" />
+        </a>
+
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav">
+          <a href="#projects">Наши проекты</a>
+          <a href="#advantages">Преимущества</a>
+          <a href="#technology">Технологии производства</a>
+          <a href="#about">О нас</a>
+          <a href="#contact">Заказ</a>
+        </nav>
+
+        <a class="button button--small header__button" href="#contact">Заказать</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <video class="hero__video" autoplay muted loop playsinline poster="assets/logo-about.png">
+          <source src="assets/hero-video.mp4" type="video/mp4" />
+        </video>
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+          <h1>Мебель и интерьерные решения под заказ</h1>
+          <p>
+            Изготавливаем кухни, шкафы, гардеробные, перегородки и другие изделия по индивидуальным размерам.
+          </p>
+          <a class="button" href="#contact">Оставить заявку</a>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <h2 class="section__title">Наши проекты</h2>
+          <div class="projects-grid">
+            <article class="project-card project-card--large">
+              <img src="assets/project-1-kitchen-classic.png" alt="Белая угловая кухня" />
+              <div class="project-card__info">
+                <h3>Белая угловая кухня</h3>
+                <p>Светлая классическая кухня с удобной угловой компоновкой и вместительными секциями.</p>
+              </div>
+            </article>
+            <article class="project-card">
+              <img src="assets/project-2-wardrobe-art.png" alt="Шкаф-купе с рисунком" />
+              <div class="project-card__info">
+                <h3>Шкаф-купе с рисунком</h3>
+                <p>Встроенный шкаф-купе с декоративными фасадами для хранения и акцента в интерьере.</p>
+              </div>
+            </article>
+            <article class="project-card project-card--tall">
+              <img src="assets/project-3-attic-wardrobe.png" alt="Шкаф в мансарде" />
+              <div class="project-card__info">
+                <h3>Шкаф в мансарде</h3>
+                <p>Индивидуальный шкаф под скос крыши для рационального использования сложного пространства.</p>
+              </div>
+            </article>
+            <article class="project-card">
+              <img src="assets/project-5-marble-kitchen.png" alt="Кухня с мраморной стеновой панелью" />
+              <div class="project-card__info">
+                <h3>Кухня с мраморной панелью</h3>
+                <p>Современная кухня с выразительной стеновой панелью и акцентной рабочей зоной.</p>
+              </div>
+            </article>
+            <article class="project-card">
+              <img src="assets/project-4-wood-kitchen.png" alt="Светлая деревянная кухня" />
+              <div class="project-card__info">
+                <h3>Светлая деревянная кухня</h3>
+                <p>Тёплая кухня в древесных оттенках с лаконичными фасадами и уютной атмосферой.</p>
+              </div>
+            </article>
+            <article class="project-card">
+              <img src="assets/project-6-modern-white-kitchen.png" alt="Современная белая кухня с островом" />
+              <div class="project-card__info">
+                <h3>Белая кухня с островом</h3>
+                <p>Лаконичная кухня в светлых оттенках с большим островом, подвесным светом и аккуратной встроенной системой хранения.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--compact" id="advantages">
+        <div class="container">
+          <h2 class="section__title">Преимущества</h2>
+          <div class="advantages">
+            <article class="advantage-card">
+              <div class="advantage-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none">
+                  <rect x="12" y="24" width="40" height="26" rx="6"></rect>
+                  <path d="M20 24V16H44V24"></path>
+                  <path d="M24 34H24.01M32 34H32.01M40 34H40.01"></path>
+                </svg>
+              </div>
+              <h3>Производство в городе</h3>
+              <p>Контролируем каждый этап: от распила и кромки до финальной сборки изделия.</p>
+            </article>
+            <article class="advantage-card">
+              <div class="advantage-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none">
+                  <path d="M10 38H38V24H46L54 32V44H50"></path>
+                  <rect x="10" y="22" width="28" height="22" rx="4"></rect>
+                  <circle cx="22" cy="46" r="4"></circle>
+                  <circle cx="46" cy="46" r="4"></circle>
+                </svg>
+              </div>
+              <h3>Надёжные поставщики</h3>
+              <p>Работаем с проверенными материалами и комплектующими для стабильного качества.</p>
+            </article>
+            <article class="advantage-card">
+              <div class="advantage-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none">
+                  <path d="M16 48L20 20L44 16L48 40L24 44L16 48Z"></path>
+                  <path d="M24 24L40 40"></path>
+                  <path d="M40 24L24 40"></path>
+                </svg>
+              </div>
+              <h3>Ваши размеры</h3>
+              <p>Проектируем мебель индивидуально под помещение, задачу и стиль интерьера.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="technology">
+        <div class="container">
+          <h2 class="section__title">Технологии производства</h2>
+
+          <div class="tech-list">
+            <article class="tech-item">
+              <img src="assets/tech-1-panel-saw.png" alt="Форматно-раскроечный станок" />
+              <div class="tech-item__content">
+                <h3>Форматно-раскроечный станок</h3>
+                <p>
+                  Раскраивает листовые материалы по точным размерам. Даёт чистый и ровный рез без сколов,
+                  что важно для качественной сборки корпусной мебели.
+                </p>
+              </div>
+            </article>
+
+            <article class="tech-item tech-item--reverse">
+              <img src="assets/tech-2-drill-insert.png" alt="Сверлильно-присадочный станок Vitap Classic" />
+              <div class="tech-item__content">
+                <h3>Сверлильно-присадочный станок Vitap Classic</h3>
+                <p>
+                  Используется для точного сверления отверстий под мебельную фурнитуру и присадку деталей.
+                  Позволяет собирать изделия аккуратно и без лишней подгонки.
+                </p>
+              </div>
+            </article>
+
+            <article class="tech-item">
+              <img src="assets/tech-3-trim-saw.png" alt="Торцовочная пила" />
+              <div class="tech-item__content">
+                <h3>Торцовочная пила</h3>
+                <p>
+                  Нужна для чистого поперечного реза под углом 90° и 45°. Помогает точно изготавливать рамки,
+                  планки, наличники и декоративные элементы.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <h2 class="section__title">Что мы делаем</h2>
+          <div class="services">
+            <div class="services__text">
+              <p>
+                Изготавливаем кухни, шкафы, гардеробные, стеллажи, перегородки и другие интерьерные решения.
+                Подбираем материалы, делаем замер, согласовываем проект и выполняем монтаж.
+              </p>
+            </div>
+            <div class="services__gallery">
+              <img src="assets/what-1-shoe-cabinets.png" alt="Тумбы для обуви" />
+              <img src="assets/what-2-3d-design.png" alt="3D проект кухни" />
+              <img src="assets/what-3-installation.png" alt="Процесс монтажа кухни" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about">
+          <div class="about__content">
+            <h2 class="section__title">О нас</h2>
+            <p>
+              «Северный комфорт» - столярно-мебельная компания, которая специализируется на изготовлении мебели
+              для жилых и коммерческих интерьеров.
+            </p>
+            <p>
+              Мы работаем по индивидуальным размерам, помогаем подобрать материалы и создаём удобные решения под
+              конкретное помещение. При необходимости выполняем замер, доставку и монтаж.
+            </p>
+          </div>
+          <div class="about__image">
+            <img src="assets/logo-about.png" alt="Северный Комфорт" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--contact" id="contact">
+        <div class="container">
+          <h2 class="section__title">Заказ</h2>
+          <div class="contact-card">
+            <div class="contact-card__image">
+              <img src="assets/form-side-materials.png" alt="Образцы материалов" />
+            </div>
+            <div class="contact-card__form-wrap">
+              <h3>Оставьте свои данные</h3>
+              <p>И мы свяжемся с вами</p>
+
+              <form class="contact-form" action="#" method="post">
+                <label>
+                  <span>Как к вам обращаться?</span>
+                  <input type="text" name="name" placeholder="Введите своё имя" />
+                </label>
+
+                <label>
+                  <span>Как с вами связаться?</span>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+79213378534"
+                    inputmode="tel"
+                    autocomplete="tel"
+                    pattern="^\+?[0-9]{10,15}$"
+                    title="Введите номер телефона: только цифры, можно с плюсом в начале"
+                    required
+                  />
+                </label>
+
+                <label>
+                  <span>Введите сообщение</span>
+                  <textarea name="message" placeholder="Введите сообщение"></textarea>
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" name="agree" />
+                  <span>Я согласен с условиями обработки и хранения персональных данных</span>
+                </label>
+
+                <button class="button" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a class="logo footer__logo" href="#top">
+          <img src="assets/logo.png" alt="Логотип Северный Комфорт" />
+        </a>
+
+        <div class="footer__column">
+          <h3>Навигация</h3>
+          <a href="#projects">Наши проекты</a>
+          <a href="#advantages">Преимущества</a>
+          <a href="#technology">Технологии производства</a>
+          <a href="#about">О нас</a>
+          <a href="#contact">Заказ</a>
+        </div>
+
+        <div class="footer__column">
+          <h3>Контакты</h3>
+          <a href="tel:+79213378534">+7 921 337-85-34</a>
+          <a href="mailto:severnycomfort@mail.ru">severnycomfort@mail.ru</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
