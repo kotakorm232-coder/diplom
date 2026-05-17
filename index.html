@@ -41,9 +41,9 @@
         </video>
         <div class="hero__overlay"></div>
         <div class="container hero__content">
-          <h1>Мебель и интерьерные решения под заказ</h1>
+          <h1>Мебель <br>и интерьерные решения под заказ</h1>
           <p>
-            Изготавливаем кухни, шкафы, гардеробные, перегородки и другие изделия по индивидуальным размерам.
+            Изготавливаем кухни, шкафы, гардеробные, перегородки и другие изделия по&nbsp;индивидуальным размерам.
           </p>
           <a class="button" href="#contact">Оставить заявку</a>
         </div>
@@ -53,42 +53,42 @@
         <div class="container">
           <h2 class="section__title">Наши проекты</h2>
           <div class="projects-grid">
-            <article class="project-card project-card--large">
+            <article class="project-card project-card--large" data-project-card data-project-id="1" tabindex="0" role="button" aria-label="Открыть галерею проекта: Белая угловая кухня">
               <img src="project-1-kitchen-classic.png" alt="Белая угловая кухня" />
               <div class="project-card__info">
                 <h3>Белая угловая кухня</h3>
                 <p>Светлая классическая кухня с удобной угловой компоновкой и вместительными секциями.</p>
               </div>
             </article>
-            <article class="project-card">
+            <article class="project-card" data-project-card data-project-id="2" tabindex="0" role="button" aria-label="Открыть галерею проекта: Шкаф-купе с рисунком">
               <img src="project-2-wardrobe-art.png" alt="Шкаф-купе с рисунком" />
               <div class="project-card__info">
                 <h3>Шкаф-купе с рисунком</h3>
                 <p>Встроенный шкаф-купе с декоративными фасадами для хранения и акцента в интерьере.</p>
               </div>
             </article>
-            <article class="project-card project-card--tall">
+            <article class="project-card project-card--tall" data-project-card data-project-id="3" tabindex="0" role="button" aria-label="Открыть галерею проекта: Шкаф в мансарде">
               <img src="project-3-attic-wardrobe.png" alt="Шкаф в мансарде" />
               <div class="project-card__info">
                 <h3>Шкаф в мансарде</h3>
                 <p>Индивидуальный шкаф под скос крыши для рационального использования сложного пространства.</p>
               </div>
             </article>
-            <article class="project-card">
+            <article class="project-card" data-project-card data-project-id="4" tabindex="0" role="button" aria-label="Открыть галерею проекта: Кухня с мраморной панелью">
               <img src="project-5-marble-kitchen.png" alt="Кухня с мраморной стеновой панелью" />
               <div class="project-card__info">
                 <h3>Кухня с мраморной панелью</h3>
                 <p>Современная кухня с выразительной стеновой панелью и акцентной рабочей зоной.</p>
               </div>
             </article>
-            <article class="project-card">
+            <article class="project-card" data-project-card data-project-id="5" tabindex="0" role="button" aria-label="Открыть галерею проекта: Светлая деревянная кухня">
               <img src="project-4-wood-kitchen.png" alt="Светлая деревянная кухня" />
               <div class="project-card__info">
                 <h3>Светлая деревянная кухня</h3>
                 <p>Тёплая кухня в древесных оттенках с лаконичными фасадами и уютной атмосферой.</p>
               </div>
             </article>
-            <article class="project-card">
+            <article class="project-card" data-project-card data-project-id="6" tabindex="0" role="button" aria-label="Открыть галерею проекта: Белая кухня с островом">
               <img src="project-6-modern-white-kitchen.png" alt="Современная белая кухня с островом" />
               <div class="project-card__info">
                 <h3>Белая кухня с островом</h3>
@@ -129,9 +129,18 @@
             <article class="advantage-card">
               <div class="advantage-card__icon" aria-hidden="true">
                 <svg viewBox="0 0 64 64" fill="none">
-                  <path d="M16 48L20 20L44 16L48 40L24 44L16 48Z"></path>
-                  <path d="M24 24L40 40"></path>
-                  <path d="M40 24L24 40"></path>
+                  <rect x="14" y="20" width="36" height="28" rx="5"></rect>
+                  <path d="M20 48V54"></path>
+                  <path d="M28 48V52"></path>
+                  <path d="M36 48V54"></path>
+                  <path d="M44 48V52"></path>
+                  <path d="M10 14H54"></path>
+                  <path d="M14 10V18"></path>
+                  <path d="M26 10V14"></path>
+                  <path d="M38 10V14"></path>
+                  <path d="M50 10V18"></path>
+                  <path d="M24 34H40"></path>
+                  <path d="M32 26V42"></path>
                 </svg>
               </div>
               <h3>Ваши размеры</h3>
@@ -289,8 +298,76 @@
           <a href="tel:+79213378534">+7 921 337-85-34</a>
           <a href="mailto:severnycomfort@mail.ru">severnycomfort@mail.ru</a>
         </div>
+
+        <div class="footer__column footer__column--policy">
+          <h3>Документы</h3>
+          <button class="footer__privacy-button" type="button" data-privacy-open>
+            Политика конфиденциальности
+          </button>
+        </div>
       </div>
     </footer>
+
+
+    <div class="project-modal" aria-hidden="true" data-project-modal>
+      <div class="project-modal__overlay" data-project-close></div>
+      <div class="project-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+        <button class="project-modal__close" type="button" aria-label="Закрыть галерею" data-project-close>×</button>
+        <h2 id="project-modal-title">Галерея проекта</h2>
+        <div class="project-gallery">
+          <button class="project-gallery__arrow project-gallery__arrow--prev" type="button" aria-label="Предыдущее фото" data-gallery-prev></button>
+          <img src="" alt="" data-gallery-image />
+          <button class="project-gallery__arrow project-gallery__arrow--next" type="button" aria-label="Следующее фото" data-gallery-next></button>
+          <div class="project-gallery__dots" data-gallery-thumbs></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="privacy-modal" aria-hidden="true" data-privacy-modal>
+      <div class="privacy-modal__overlay" data-privacy-close></div>
+      <div class="privacy-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+        <button class="privacy-modal__close" type="button" aria-label="Закрыть окно" data-privacy-close>×</button>
+        <h2 id="privacy-title">Политика конфиденциальности</h2>
+        <div class="privacy-modal__content">
+          <p>
+            Настоящая политика конфиденциальности описывает порядок обработки персональных данных,
+            которые пользователь оставляет на сайте компании «Северный Комфорт» при отправке заявки
+            или обращении через форму обратной связи.
+          </p>
+          <h3>Какие данные мы собираем</h3>
+          <p>
+            Мы можем получать имя, номер телефона, адрес электронной почты и текст сообщения,
+            если пользователь самостоятельно указывает эти данные в форме на сайте.
+          </p>
+          <h3>Для чего используются данные</h3>
+          <p>
+            Данные используются только для связи с пользователем, уточнения деталей заказа,
+            подготовки расчёта, консультации по проекту и организации дальнейшего взаимодействия.
+          </p>
+          <h3>Передача данных</h3>
+          <p>
+            Персональные данные не передаются третьим лицам, за исключением случаев, когда это необходимо
+            для выполнения требований законодательства Российской Федерации.
+          </p>
+          <h3>Хранение и защита</h3>
+          <p>
+            Мы принимаем разумные организационные и технические меры для защиты персональных данных
+            от неправомерного доступа, изменения, раскрытия или уничтожения.
+          </p>
+          <h3>Согласие пользователя</h3>
+          <p>
+            Отправляя форму на сайте, пользователь подтверждает согласие на обработку указанных данных
+            в целях обратной связи и обработки обращения.
+          </p>
+          <h3>Контакты</h3>
+          <p>
+            По вопросам обработки персональных данных можно обратиться по телефону
+            <a href="tel:+79213378534">+7 921 337-85-34</a> или написать на почту
+            <a href="mailto:severnycomfort@mail.ru">severnycomfort@mail.ru</a>.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
